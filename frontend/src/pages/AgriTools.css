@@ -1,0 +1,269 @@
+.agri-tools {
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.tools-header {
+  padding: 40px 0;
+}
+
+.tools-container {
+  padding-bottom: 40px;
+}
+
+.tools-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tools-sidebar {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+.tools-sidebar h3 {
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+  color: #2d3748;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.tools-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tool-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border: 2px solid #e2e8f0;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  width: 100%;
+}
+
+.tool-button {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.tool-button:hover {
+  border-color: #276749;
+  background: #F7FAFC;
+  transform: translateX(4px);
+}
+
+.tool-button.active {
+  border-color: #276749;
+  background: #276749;
+  color: white;
+}
+
+.tool-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.tool-info {
+  flex: 1;
+}
+
+.tool-title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.tool-description {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.tool-button.active .tool-description {
+  opacity: 0.9;
+}
+
+.tool-content {
+  flex: 1;
+}
+
+.tool-card {
+  min-height: 500px;
+}
+
+.tool-header {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.tool-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2D3748;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.tool-header p {
+  color: #4A5568;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.calculator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #2D3748;
+  font-size: 16px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+
+.form-group input,
+.form-group select {
+  font-size: 16px;
+  min-height: 48px;
+  color: #2D3748;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #276749;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.form-actions .btn {
+  flex: 1;
+}
+
+.calculation-result {
+  margin-top: 32px;
+  padding: 24px;
+  background: #F7FAFC;
+  border-radius: 12px;
+  border: 2px solid #276749;
+}
+
+.calculation-result h3 {
+  font-size: 1.2rem;
+  color: #2d3748;
+  margin-bottom: 16px;
+}
+
+.result-card {
+  text-align: center;
+  padding: 24px;
+  background: white;
+  border-radius: 8px;
+}
+
+.result-value {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.result-number {
+  font-size: 48px;
+  font-weight: 700;
+  color: #276749;
+}
+
+.result-unit {
+  font-size: 1.2rem;
+  color: #718096;
+  font-weight: 500;
+}
+
+.result-label {
+  font-size: 1.1rem;
+  color: #2d3748;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.result-details {
+  font-size: 0.95rem;
+  color: #718096;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e2e8f0;
+}
+
+@media (max-width: 1024px) {
+  .tools-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .tools-sidebar {
+    position: static;
+  }
+
+  .tools-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tools-list {
+    grid-template-columns: 1fr;
+  }
+
+  .tool-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .result-number {
+    font-size: 2rem;
+  }
+}
+

@@ -1,0 +1,143 @@
+.hero {
+  background: #276749;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  margin-bottom: 32px;
+  opacity: 0.95;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-buttons .btn-outline {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  color: white;
+}
+
+.hero-buttons .btn-outline:hover {
+  background: white;
+  color: #276749;
+  border-color: white;
+}
+
+.features-section {
+  padding: 80px 20px;
+}
+
+.features-grid {
+  margin-top: 48px;
+}
+
+.feature-card {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.feature-icon {
+  font-size: 48px;
+  color: #276749;
+  margin-bottom: 16px;
+}
+
+.feature-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #2D3748;
+}
+
+.feature-card p {
+  color: #4A5568;
+  margin-bottom: 16px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.feature-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #276749;
+  font-weight: 600;
+  font-size: 16px;
+  transition: gap 0.3s ease;
+}
+
+.feature-card:hover .feature-link {
+  gap: 12px;
+}
+
+.alerts-section {
+  padding: 80px 20px;
+  background: #f7fafc;
+}
+
+.alerts-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #2d3748;
+}
+
+.view-all-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  color: #3182CE;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: gap 0.3s ease;
+}
+
+.view-all-link:hover {
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
